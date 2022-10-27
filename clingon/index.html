@@ -45,7 +45,7 @@
       align-items: center;
       width: 100vw;
       height: 100vh;
-      background: #506967;
+      background: #DAD8C9;
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -62,7 +62,7 @@
     }
     .answer {
       display: grid;
-      grid-template-columns: repeat(2, auto);
+      grid-template-columns: repeat(1, auto);
       gap: 10px;
     }
     .answer01 {
@@ -81,14 +81,24 @@
       border-radius: 12px;
       padding: 7px;
       font-size: 30px;
-      background-color: #f7ce6a;
+      background-color: #34AA79;
       outline: none;
       text-decoration: none;
-      color: black;
+      color: white;
       text-align: center
     }
+    .btn01 {
+      border-radius: 12px;
+      padding: 7px;
+      font-size: 30px;
+      background-color: #C84645;
+      outline: none;
+      text-decoration: none;
+      color: white;
+      text-align: center
+    }    
     .black h1 {
-      color: yellow;
+      color: #E9CC6D;
     }
     .black p {
       font-size: 25px;
@@ -106,27 +116,26 @@
 <div id="primeira">
 <div class="question">
 <h1>Pergunta 1 de 2</h1>
-<p>Você realmente quer descobrir a rotina de 3 minutos?</p>
+<p>Essa rotina está mudando a vida de milhares de homens, você realmente quer conhecer esse método?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="segunda()">Sim</button>
-<button class="btn" onclick="segunda()">Não</button>
+<button class="btn01" onclick="segunda()">Não</button>
 </div>
 </div>
 <div id="segunda" class="hide">
 <div class="question">
 <h1>Pergunta 2 de 2</h1>
-<p>Você tem falhas ou entradas na cabeça?</p>
+<p>Eu vou te mandar pelo Whatsapp um vídeo de apenas 6 minutos, topa ver ele até o final?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="terceira()">Sim</button>
-<button class="btn" onclick="terceira()">Não</button>
+<button class="btn01" onclick="terceira()">Não</button>
 </div>
 </div>
 <div id="terceira" class="hide">
 <div class="question">
 <h1>Tudo certo, clique no botão abaixo...</h1>
-<p>Vou te enviar pelo Whatsapp a rotina de apenas 3 minutos que está curando a calvície dos Brasileiros</p>
 </div>
 <div class="answer01" style="text-align: center;">
 <button class="btn" onclick="redirect()">QUERO CONHECER</button>
